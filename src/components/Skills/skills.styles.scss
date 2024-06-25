@@ -1,0 +1,33 @@
+.skills-section {
+  background-color: #323232;
+  padding: 1.5rem;
+  text-align: left;
+  .fa-brands {
+    font-size: 4rem;
+  }
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    padding: 1rem;
+  }
+  .skills-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+
+    div {
+      transition: scale 0.3s ease-in-out;
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .skills-row {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}

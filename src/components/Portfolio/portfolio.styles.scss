@@ -1,0 +1,26 @@
+.portfolio-section {
+  margin-top: 5rem;
+  h2 {
+    margin-left: 4rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px hsla(230, 60%, 98%, 0.281) solid;
+  }
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  margin: 2rem 4rem;
+}
+@media (max-width: 900px) {
+  .portfolio-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+}
